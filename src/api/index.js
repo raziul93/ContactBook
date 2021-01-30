@@ -1,12 +1,11 @@
 const BASE_URL = "https://univ-contact-book.herokuapp.com/api"
 
-export async function fetchAPI(endpoint, method="GET", sendData=null) {
-  let url = BASE_URL.concat(endpoint);
+async function fetchAPI(url, method="GET", sendData=null) {
   const fetchOptions = {
     method: method,
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJheml1bDkzIiwiaWF0IjoxNjA2MDI2MjY2LCJleHAiOjE2MDY2MzEwNjZ9.llwtYuZF8PVR9fW7ao-cQPrtXW7iqbVxvWx5bG4d8EU'
+      'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1vaGFtbWFkIiwiaWF0IjoxNjEyMDE3NzE5LCJleHAiOjE2MTcyMDE3MTl9.L-4AvMQF9lgIYz2t8bYlIVZnO27nC687sHIyZG1gCQY'
     }
   };
 
